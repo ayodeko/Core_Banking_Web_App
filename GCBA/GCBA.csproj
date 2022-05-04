@@ -1,0 +1,1484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7310F5E7-EA08-450B-937A-16067DA322FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GCBA</RootNamespace>
+    <AssemblyName>GCBA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SendGrid.SmtpApi, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SendGrid.SmtpApi.1.3.6\lib\portable40-net40+sl5+win8+wp8+wpa81\SendGrid.SmtpApi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.4.0.0\lib\net451\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.4.0.0\lib\net451\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.4.0.0\lib\net451\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.4.0.0\lib\net451\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountTypeManagementsController.cs" />
+    <Compile Include="Controllers\BranchesController.cs" />
+    <Compile Include="Controllers\ConsumerAccountsController.cs" />
+    <Compile Include="Controllers\ConsumersController.cs" />
+    <Compile Include="Controllers\EodController.cs" />
+    <Compile Include="Controllers\FinancialReportController.cs" />
+    <Compile Include="Controllers\FineNamesController.cs" />
+    <Compile Include="Controllers\GlAccountsController.cs" />
+    <Compile Include="Controllers\GlCategoriesController.cs" />
+    <Compile Include="Controllers\GlPostingsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\TellerPostingsController.cs" />
+    <Compile Include="Controllers\TellersController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Logic\ConsumerLogic.cs" />
+    <Compile Include="Logic\DebitAndCreditLogic.cs" />
+    <Compile Include="Logic\EodLogic.cs" />
+    <Compile Include="Logic\FinancialReportLogic.cs" />
+    <Compile Include="Logic\GlAccountLogic.cs" />
+    <Compile Include="Logic\GlCategoryLogic.cs" />
+    <Compile Include="Logic\SendEmailLogic.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logic\TellerLogic.cs" />
+    <Compile Include="Logic\TellerMgtLogic.cs" />
+    <Compile Include="Logic\TellerPostingLogic.cs" />
+    <Compile Include="Logic\UserLogic.cs" />
+    <Compile Include="Logic\UtilityLogic.cs" />
+    <Compile Include="Logic\ConsumerAccountLogic.cs" />
+    <Compile Include="Migrations\202002231059336_InitialModel.cs" />
+    <Compile Include="Migrations\202002231059336_InitialModel.Designer.cs">
+      <DependentUpon>202002231059336_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002231159311_AddCustomerAndMembers.cs" />
+    <Compile Include="Migrations\202002231159311_AddCustomerAndMembers.Designer.cs">
+      <DependentUpon>202002231159311_AddCustomerAndMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002231211052_AddBranch.cs" />
+    <Compile Include="Migrations\202002231211052_AddBranch.Designer.cs">
+      <DependentUpon>202002231211052_AddBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002231245214_AddRoleAndClaims.cs" />
+    <Compile Include="Migrations\202002231245214_AddRoleAndClaims.Designer.cs">
+      <DependentUpon>202002231245214_AddRoleAndClaims.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002231322242_AddProfileDataToAppUser.cs" />
+    <Compile Include="Migrations\202002231322242_AddProfileDataToAppUser.Designer.cs">
+      <DependentUpon>202002231322242_AddProfileDataToAppUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002232009143_CustomerModel.cs" />
+    <Compile Include="Migrations\202002232009143_CustomerModel.Designer.cs">
+      <DependentUpon>202002232009143_CustomerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002241016153_CustIdNameChange.cs" />
+    <Compile Include="Migrations\202002241016153_CustIdNameChange.Designer.cs">
+      <DependentUpon>202002241016153_CustIdNameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002250649218_AddCustomerAccount.cs" />
+    <Compile Include="Migrations\202002250649218_AddCustomerAccount.Designer.cs">
+      <DependentUpon>202002250649218_AddCustomerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002250727016_AddCustomerAccount1.cs" />
+    <Compile Include="Migrations\202002250727016_AddCustomerAccount1.Designer.cs">
+      <DependentUpon>202002250727016_AddCustomerAccount1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002250917400_EditCustomerAccount.cs" />
+    <Compile Include="Migrations\202002250917400_EditCustomerAccount.Designer.cs">
+      <DependentUpon>202002250917400_EditCustomerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002251322059_ChangeEmailApplicationUser.cs" />
+    <Compile Include="Migrations\202002251322059_ChangeEmailApplicationUser.Designer.cs">
+      <DependentUpon>202002251322059_ChangeEmailApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002261025340_AddGlCategories.cs" />
+    <Compile Include="Migrations\202002261025340_AddGlCategories.Designer.cs">
+      <DependentUpon>202002261025340_AddGlCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002270827124_AddCodeToGlCategory.cs" />
+    <Compile Include="Migrations\202002270827124_AddCodeToGlCategory.Designer.cs">
+      <DependentUpon>202002270827124_AddCodeToGlCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002270957212_AddGlAccounts.cs" />
+    <Compile Include="Migrations\202002270957212_AddGlAccounts.Designer.cs">
+      <DependentUpon>202002270957212_AddGlAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002271742332_TellersTill.cs" />
+    <Compile Include="Migrations\202002271742332_TellersTill.Designer.cs">
+      <DependentUpon>202002271742332_TellersTill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002271747254_TellersTill1.cs" />
+    <Compile Include="Migrations\202002271747254_TellersTill1.Designer.cs">
+      <DependentUpon>202002271747254_TellersTill1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002271750440_TellersTil.cs" />
+    <Compile Include="Migrations\202002271750440_TellersTil.Designer.cs">
+      <DependentUpon>202002271750440_TellersTil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002271758239_AddTellerTill.cs" />
+    <Compile Include="Migrations\202002271758239_AddTellerTill.Designer.cs">
+      <DependentUpon>202002271758239_AddTellerTill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002272045298_AddTillAccount.cs" />
+    <Compile Include="Migrations\202002272045298_AddTillAccount.Designer.cs">
+      <DependentUpon>202002272045298_AddTillAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002291237220_AddAccountTypeManagement.cs" />
+    <Compile Include="Migrations\202002291237220_AddAccountTypeManagement.Designer.cs">
+      <DependentUpon>202002291237220_AddAccountTypeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002291319154_UpdateAccountTypeManagement.cs" />
+    <Compile Include="Migrations\202002291319154_UpdateAccountTypeManagement.Designer.cs">
+      <DependentUpon>202002291319154_UpdateAccountTypeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003010243126_updateLoansToCustomerDB.cs" />
+    <Compile Include="Migrations\202003010243126_updateLoansToCustomerDB.Designer.cs">
+      <DependentUpon>202003010243126_updateLoansToCustomerDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003010330242_removeDateFromCustomerAccount.cs" />
+    <Compile Include="Migrations\202003010330242_removeDateFromCustomerAccount.Designer.cs">
+      <DependentUpon>202003010330242_removeDateFromCustomerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003010346188_databaseErrorChange.cs" />
+    <Compile Include="Migrations\202003010346188_databaseErrorChange.Designer.cs">
+      <DependentUpon>202003010346188_databaseErrorChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003010355509_CustomerIdChange.cs" />
+    <Compile Include="Migrations\202003010355509_CustomerIdChange.Designer.cs">
+      <DependentUpon>202003010355509_CustomerIdChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003010408456_CustomerIdChangeAgain.cs" />
+    <Compile Include="Migrations\202003010408456_CustomerIdChangeAgain.Designer.cs">
+      <DependentUpon>202003010408456_CustomerIdChangeAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003010751373_PutConsumerWhereCustomer.cs" />
+    <Compile Include="Migrations\202003010751373_PutConsumerWhereCustomer.Designer.cs">
+      <DependentUpon>202003010751373_PutConsumerWhereCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003011711319_addValuesToConsumer.cs" />
+    <Compile Include="Migrations\202003011711319_addValuesToConsumer.Designer.cs">
+      <DependentUpon>202003011711319_addValuesToConsumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003011726571_addNumberOfYearsToLoan.cs" />
+    <Compile Include="Migrations\202003011726571_addNumberOfYearsToLoan.Designer.cs">
+      <DependentUpon>202003011726571_addNumberOfYearsToLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003011858159_addNullableToConsumerAccount.cs" />
+    <Compile Include="Migrations\202003011858159_addNullableToConsumerAccount.Designer.cs">
+      <DependentUpon>202003011858159_addNullableToConsumerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003011926472_changesToConsumerAccount.cs" />
+    <Compile Include="Migrations\202003011926472_changesToConsumerAccount.Designer.cs">
+      <DependentUpon>202003011926472_changesToConsumerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003012007416_newChangesToConsumerAccount.cs" />
+    <Compile Include="Migrations\202003012007416_newChangesToConsumerAccount.Designer.cs">
+      <DependentUpon>202003012007416_newChangesToConsumerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003020015407_AddTellerPosting.cs" />
+    <Compile Include="Migrations\202003020015407_AddTellerPosting.Designer.cs">
+      <DependentUpon>202003020015407_AddTellerPosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003020959402_AddGlPosting.cs" />
+    <Compile Include="Migrations\202003020959402_AddGlPosting.Designer.cs">
+      <DependentUpon>202003020959402_AddGlPosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003021517557_AddTransaction.cs" />
+    <Compile Include="Migrations\202003021517557_AddTransaction.Designer.cs">
+      <DependentUpon>202003021517557_AddTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003022056458_AddIncomeExpense.cs" />
+    <Compile Include="Migrations\202003022056458_AddIncomeExpense.Designer.cs">
+      <DependentUpon>202003022056458_AddIncomeExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003030126364_AddInfoToConsumer.cs" />
+    <Compile Include="Migrations\202003030126364_AddInfoToConsumer.Designer.cs">
+      <DependentUpon>202003030126364_AddInfoToConsumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031604243_ChangeofNullableConsumerAccount.cs" />
+    <Compile Include="Migrations\202003031604243_ChangeofNullableConsumerAccount.Designer.cs">
+      <DependentUpon>202003031604243_ChangeofNullableConsumerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003040454526_checkforchanges.cs" />
+    <Compile Include="Migrations\202003040454526_checkforchanges.Designer.cs">
+      <DependentUpon>202003040454526_checkforchanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003041324379_ReMigrateThings.cs" />
+    <Compile Include="Migrations\202003041324379_ReMigrateThings.Designer.cs">
+      <DependentUpon>202003041324379_ReMigrateThings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003041432102_AddClientAccount.cs" />
+    <Compile Include="Migrations\202003041432102_AddClientAccount.Designer.cs">
+      <DependentUpon>202003041432102_AddClientAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountConfiguration.cs" />
+    <Compile Include="Models\AccountTypeManagement.cs" />
+    <Compile Include="Models\BalanceSheetLogic.cs" />
+    <Compile Include="Models\ClientAccount.cs" />
+    <Compile Include="Models\Consumer.cs" />
+    <Compile Include="Models\ConsumerAccount.cs" />
+    <Compile Include="Models\ExpenseIncomeEntry.cs" />
+    <Compile Include="Models\ProfitAndLossLogic.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Usser.cs" />
+    <Compile Include="Models\ViewModels\LiabilityViewModel.cs" />
+    <Compile Include="Models\ViewModels\TrialBalanceViewModel.cs" />
+    <Compile Include="Models\GlAccount.cs" />
+    <Compile Include="Models\GlCategory.cs" />
+    <Compile Include="Models\GlPosting.cs" />
+    <Compile Include="Models\TellerPosting.cs" />
+    <Compile Include="Models\TellersTill.cs" />
+    <Compile Include="Models\TellerTIll.cs" />
+    <Compile Include="Models\TillAccount.cs" />
+    <Compile Include="Models\Transaction.cs" />
+    <Compile Include="Models\ViewModels\CreateCustomerAccountViewModel.cs" />
+    <Compile Include="Models\ViewModels\TillAccountViewModel.cs" />
+    <Compile Include="Models\ViewModels\UserViewModel\CreateUserViewModel.cs" />
+    <Compile Include="Models\ViewModels\UserViewModel\EditUserViewModel.cs" />
+    <Compile Include="Repositories\AccountTypeManagementRepository.cs" />
+    <Compile Include="Repositories\BalanceSheetDataAccess.cs" />
+    <Compile Include="Repositories\ConsumerAccountDataAccess.cs" />
+    <Compile Include="Repositories\ConsumerDataAccess.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\FineNames.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RoleClaim.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GlAccountDataAccess.cs" />
+    <Compile Include="Repositories\GlCategoriesDataAccess.cs" />
+    <Compile Include="Repositories\TellerDataAccess.cs" />
+    <Compile Include="Repositories\TransactionDataAccess.cs" />
+    <Compile Include="Repositories\UserDataAccess.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\admin\css\AdminLTE.css" />
+    <Content Include="Content\admin\css\AdminLTE.min.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-bootstrap-social.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-bootstrap-social.min.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-fullcalendar.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-fullcalendar.min.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-select2.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-select2.min.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-without-plugins.css" />
+    <Content Include="Content\admin\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Content\admin\css\skins\skin-black-light.css" />
+    <Content Include="Content\admin\css\skins\skin-black-light.min.css" />
+    <Content Include="Content\admin\css\skins\skin-black.css" />
+    <Content Include="Content\admin\css\skins\skin-black.min.css" />
+    <Content Include="Content\admin\css\skins\skin-blue-light.css" />
+    <Content Include="Content\admin\css\skins\skin-blue-light.min.css" />
+    <Content Include="Content\admin\css\skins\skin-blue.css" />
+    <Content Include="Content\admin\css\skins\skin-blue.min.css" />
+    <Content Include="Content\admin\css\skins\skin-green-light.css" />
+    <Content Include="Content\admin\css\skins\skin-green-light.min.css" />
+    <Content Include="Content\admin\css\skins\skin-green.css" />
+    <Content Include="Content\admin\css\skins\skin-green.min.css" />
+    <Content Include="Content\admin\css\skins\skin-purple-light.css" />
+    <Content Include="Content\admin\css\skins\skin-purple-light.min.css" />
+    <Content Include="Content\admin\css\skins\skin-purple.css" />
+    <Content Include="Content\admin\css\skins\skin-purple.min.css" />
+    <Content Include="Content\admin\css\skins\skin-red-light.css" />
+    <Content Include="Content\admin\css\skins\skin-red-light.min.css" />
+    <Content Include="Content\admin\css\skins\skin-red.css" />
+    <Content Include="Content\admin\css\skins\skin-red.min.css" />
+    <Content Include="Content\admin\css\skins\skin-yellow-light.css" />
+    <Content Include="Content\admin\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\admin\css\skins\skin-yellow.css" />
+    <Content Include="Content\admin\css\skins\skin-yellow.min.css" />
+    <Content Include="Content\admin\css\skins\_all-skins.css" />
+    <Content Include="Content\admin\css\skins\_all-skins.min.css" />
+    <Content Include="Content\admin\dist\css\adminlte.css" />
+    <Content Include="Content\admin\dist\css\adminlte.min.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.components.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.components.min.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.core.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.core.min.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.extra-components.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.extra-components.min.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.pages.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.pages.min.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.plugins.css" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.plugins.min.css" />
+    <Content Include="Content\admin\dist\img\AdminLTELogo.png" />
+    <Content Include="Content\admin\dist\img\avatar.png" />
+    <Content Include="Content\admin\dist\img\avatar04.png" />
+    <Content Include="Content\admin\dist\img\avatar2.png" />
+    <Content Include="Content\admin\dist\img\avatar3.png" />
+    <Content Include="Content\admin\dist\img\avatar5.png" />
+    <Content Include="Content\admin\dist\img\boxed-bg.jpg" />
+    <Content Include="Content\admin\dist\img\boxed-bg.png" />
+    <Content Include="Content\admin\dist\img\credit\american-express.png" />
+    <Content Include="Content\admin\dist\img\credit\cirrus.png" />
+    <Content Include="Content\admin\dist\img\credit\mastercard.png" />
+    <Content Include="Content\admin\dist\img\credit\mestro.png" />
+    <Content Include="Content\admin\dist\img\credit\paypal.png" />
+    <Content Include="Content\admin\dist\img\credit\paypal2.png" />
+    <Content Include="Content\admin\dist\img\credit\visa.png" />
+    <Content Include="Content\admin\dist\img\default-150x150.png" />
+    <Content Include="Content\admin\dist\img\icons.png" />
+    <Content Include="Content\admin\dist\img\photo1.png" />
+    <Content Include="Content\admin\dist\img\photo2.png" />
+    <Content Include="Content\admin\dist\img\photo3.jpg" />
+    <Content Include="Content\admin\dist\img\photo4.jpg" />
+    <Content Include="Content\admin\dist\img\prod-1.jpg" />
+    <Content Include="Content\admin\dist\img\prod-2.jpg" />
+    <Content Include="Content\admin\dist\img\prod-3.jpg" />
+    <Content Include="Content\admin\dist\img\prod-4.jpg" />
+    <Content Include="Content\admin\dist\img\prod-5.jpg" />
+    <Content Include="Content\admin\dist\img\user1-128x128.jpg" />
+    <Content Include="Content\admin\dist\img\user2-160x160.jpg" />
+    <Content Include="Content\admin\dist\img\user3-128x128.jpg" />
+    <Content Include="Content\admin\dist\img\user4-128x128.jpg" />
+    <Content Include="Content\admin\dist\img\user5-128x128.jpg" />
+    <Content Include="Content\admin\dist\img\user6-128x128.jpg" />
+    <Content Include="Content\admin\dist\img\user7-128x128.jpg" />
+    <Content Include="Content\admin\dist\img\user8-128x128.jpg" />
+    <Content Include="Content\admin\dist\js\adminlte.js" />
+    <Content Include="Content\admin\dist\js\adminlte.min.js" />
+    <Content Include="Content\admin\dist\js\demo.js" />
+    <Content Include="Content\admin\dist\js\pages\dashboard.js" />
+    <Content Include="Content\admin\dist\js\pages\dashboard2.js" />
+    <Content Include="Content\admin\dist\js\pages\dashboard3.js" />
+    <Content Include="Content\admin\img\avatar.png" />
+    <Content Include="Content\admin\img\avatar04.png" />
+    <Content Include="Content\admin\img\avatar2.png" />
+    <Content Include="Content\admin\img\avatar3.png" />
+    <Content Include="Content\admin\img\avatar5.png" />
+    <Content Include="Content\admin\img\credit\american-express.png" />
+    <Content Include="Content\admin\img\credit\cirrus.png" />
+    <Content Include="Content\admin\img\credit\mastercard.png" />
+    <Content Include="Content\admin\img\credit\mestro.png" />
+    <Content Include="Content\admin\img\credit\paypal.png" />
+    <Content Include="Content\admin\img\credit\paypal2.png" />
+    <Content Include="Content\admin\img\credit\visa.png" />
+    <Content Include="Content\admin\img\default-50x50.gif" />
+    <Content Include="Content\admin\img\icons.png" />
+    <Content Include="Content\admin\img\photo1.png" />
+    <Content Include="Content\admin\img\photo2.png" />
+    <Content Include="Content\admin\img\photo3.jpg" />
+    <Content Include="Content\admin\img\photo4.jpg" />
+    <Content Include="Content\admin\img\user1-128x128.jpg" />
+    <Content Include="Content\admin\img\user2-160x160.jpg" />
+    <Content Include="Content\admin\img\user3-128x128.jpg" />
+    <Content Include="Content\admin\img\user4-128x128.jpg" />
+    <Content Include="Content\admin\img\user5-128x128.jpg" />
+    <Content Include="Content\admin\img\user6-128x128.jpg" />
+    <Content Include="Content\admin\img\user7-128x128.jpg" />
+    <Content Include="Content\admin\img\user8-128x128.jpg" />
+    <Content Include="Content\admin\js\adminlte.js" />
+    <Content Include="Content\admin\js\adminlte.min.js" />
+    <Content Include="Content\admin\js\demo.js" />
+    <Content Include="Content\admin\js\pages\dashboard.js" />
+    <Content Include="Content\admin\js\pages\dashboard2.js" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\all.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\brands.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\brands.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\regular.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\regular.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\solid.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\solid.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\admin\plugins\jquery\core.js" />
+    <Content Include="Content\admin\plugins\jquery\jquery.js" />
+    <Content Include="Content\admin\plugins\jquery\jquery.min.js" />
+    <Content Include="Content\admin\plugins\jquery\jquery.slim.js" />
+    <Content Include="Content\admin\plugins\jquery\jquery.slim.min.js" />
+    <Content Include="Content\admin\plugins\overlayScrollbars\css\OverlayScrollbars.css" />
+    <Content Include="Content\admin\plugins\overlayScrollbars\css\OverlayScrollbars.min.css" />
+    <Content Include="Content\admin\plugins\overlayScrollbars\js\jquery.overlayScrollbars.js" />
+    <Content Include="Content\admin\plugins\overlayScrollbars\js\jquery.overlayScrollbars.min.js" />
+    <Content Include="Content\admin\plugins\overlayScrollbars\js\OverlayScrollbars.js" />
+    <Content Include="Content\admin\plugins\overlayScrollbars\js\OverlayScrollbars.min.js" />
+    <Content Include="Content\admin\plugins\popper\esm\popper-utils.js" />
+    <Content Include="Content\admin\plugins\popper\esm\popper-utils.min.js" />
+    <Content Include="Content\admin\plugins\popper\esm\popper.js" />
+    <Content Include="Content\admin\plugins\popper\esm\popper.min.js" />
+    <Content Include="Content\admin\plugins\popper\popper-utils.js" />
+    <Content Include="Content\admin\plugins\popper\popper-utils.min.js" />
+    <Content Include="Content\admin\plugins\popper\popper.js" />
+    <Content Include="Content\admin\plugins\popper\popper.min.js" />
+    <Content Include="Content\admin\plugins\popper\umd\popper-utils.js" />
+    <Content Include="Content\admin\plugins\popper\umd\popper-utils.min.js" />
+    <Content Include="Content\admin\plugins\popper\umd\popper.js" />
+    <Content Include="Content\admin\plugins\popper\umd\popper.min.js" />
+    <Content Include="Content\bootstrap-darkly.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\darkmin\css\custom.css" />
+    <Content Include="Content\darkmin\css\font.css" />
+    <Content Include="Content\darkmin\css\style.blue.css" />
+    <Content Include="Content\darkmin\css\style.default.css" />
+    <Content Include="Content\darkmin\css\style.green.css" />
+    <Content Include="Content\darkmin\css\style.pink.css" />
+    <Content Include="Content\darkmin\css\style.red.css" />
+    <Content Include="Content\darkmin\css\style.sea.css" />
+    <Content Include="Content\darkmin\css\style.violet.css" />
+    <Content Include="Content\darkmin\fonts\dark-dashboard.svg" />
+    <Content Include="Content\darkmin\img\avatar-0.jpg" />
+    <Content Include="Content\darkmin\img\avatar-1.jpg" />
+    <Content Include="Content\darkmin\img\avatar-10.jpg" />
+    <Content Include="Content\darkmin\img\avatar-11.jpg" />
+    <Content Include="Content\darkmin\img\avatar-2.jpg" />
+    <Content Include="Content\darkmin\img\avatar-3.jpg" />
+    <Content Include="Content\darkmin\img\avatar-4.jpg" />
+    <Content Include="Content\darkmin\img\avatar-5.jpg" />
+    <Content Include="Content\darkmin\img\avatar-6.jpg" />
+    <Content Include="Content\darkmin\img\avatar-7.jpg" />
+    <Content Include="Content\darkmin\img\avatar-8.jpg" />
+    <Content Include="Content\darkmin\img\avatar-9.jpg" />
+    <Content Include="Content\darkmin\img\bg.jpeg" />
+    <Content Include="Content\darkmin\img\brand\brand-1.svg" />
+    <Content Include="Content\darkmin\img\brand\brand-2.svg" />
+    <Content Include="Content\darkmin\img\brand\brand-3.svg" />
+    <Content Include="Content\darkmin\img\brand\brand-4.svg" />
+    <Content Include="Content\darkmin\img\brand\brand-5.svg" />
+    <Content Include="Content\darkmin\img\brand\brand-6.svg" />
+    <Content Include="Content\darkmin\img\favicon.ico" />
+    <Content Include="Content\darkmin\img\flags\16\AD.png" />
+    <Content Include="Content\darkmin\img\flags\16\AE.png" />
+    <Content Include="Content\darkmin\img\flags\16\AF.png" />
+    <Content Include="Content\darkmin\img\flags\16\AG.png" />
+    <Content Include="Content\darkmin\img\flags\16\AI.png" />
+    <Content Include="Content\darkmin\img\flags\16\AL.png" />
+    <Content Include="Content\darkmin\img\flags\16\AM.png" />
+    <Content Include="Content\darkmin\img\flags\16\AN.png" />
+    <Content Include="Content\darkmin\img\flags\16\AO.png" />
+    <Content Include="Content\darkmin\img\flags\16\AQ.png" />
+    <Content Include="Content\darkmin\img\flags\16\AR.png" />
+    <Content Include="Content\darkmin\img\flags\16\AS.png" />
+    <Content Include="Content\darkmin\img\flags\16\AT.png" />
+    <Content Include="Content\darkmin\img\flags\16\AU.png" />
+    <Content Include="Content\darkmin\img\flags\16\AW.png" />
+    <Content Include="Content\darkmin\img\flags\16\AX.png" />
+    <Content Include="Content\darkmin\img\flags\16\AZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\BA.png" />
+    <Content Include="Content\darkmin\img\flags\16\BB.png" />
+    <Content Include="Content\darkmin\img\flags\16\BD.png" />
+    <Content Include="Content\darkmin\img\flags\16\BE.png" />
+    <Content Include="Content\darkmin\img\flags\16\BF.png" />
+    <Content Include="Content\darkmin\img\flags\16\BG.png" />
+    <Content Include="Content\darkmin\img\flags\16\BH.png" />
+    <Content Include="Content\darkmin\img\flags\16\BI.png" />
+    <Content Include="Content\darkmin\img\flags\16\BJ.png" />
+    <Content Include="Content\darkmin\img\flags\16\BL.png" />
+    <Content Include="Content\darkmin\img\flags\16\BM.png" />
+    <Content Include="Content\darkmin\img\flags\16\BN.png" />
+    <Content Include="Content\darkmin\img\flags\16\BO.png" />
+    <Content Include="Content\darkmin\img\flags\16\BR.png" />
+    <Content Include="Content\darkmin\img\flags\16\BS.png" />
+    <Content Include="Content\darkmin\img\flags\16\BT.png" />
+    <Content Include="Content\darkmin\img\flags\16\BW.png" />
+    <Content Include="Content\darkmin\img\flags\16\BY.png" />
+    <Content Include="Content\darkmin\img\flags\16\BZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\CA.png" />
+    <Content Include="Content\darkmin\img\flags\16\CC.png" />
+    <Content Include="Content\darkmin\img\flags\16\CD.png" />
+    <Content Include="Content\darkmin\img\flags\16\CF.png" />
+    <Content Include="Content\darkmin\img\flags\16\CG.png" />
+    <Content Include="Content\darkmin\img\flags\16\CH.png" />
+    <Content Include="Content\darkmin\img\flags\16\CI.png" />
+    <Content Include="Content\darkmin\img\flags\16\CK.png" />
+    <Content Include="Content\darkmin\img\flags\16\CL.png" />
+    <Content Include="Content\darkmin\img\flags\16\CM.png" />
+    <Content Include="Content\darkmin\img\flags\16\CN.png" />
+    <Content Include="Content\darkmin\img\flags\16\CO.png" />
+    <Content Include="Content\darkmin\img\flags\16\CR.png" />
+    <Content Include="Content\darkmin\img\flags\16\CT.png" />
+    <Content Include="Content\darkmin\img\flags\16\CU.png" />
+    <Content Include="Content\darkmin\img\flags\16\CV.png" />
+    <Content Include="Content\darkmin\img\flags\16\CW.png" />
+    <Content Include="Content\darkmin\img\flags\16\CX.png" />
+    <Content Include="Content\darkmin\img\flags\16\CY.png" />
+    <Content Include="Content\darkmin\img\flags\16\CZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\DE.png" />
+    <Content Include="Content\darkmin\img\flags\16\DJ.png" />
+    <Content Include="Content\darkmin\img\flags\16\DK.png" />
+    <Content Include="Content\darkmin\img\flags\16\DM.png" />
+    <Content Include="Content\darkmin\img\flags\16\DO.png" />
+    <Content Include="Content\darkmin\img\flags\16\DZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\EC.png" />
+    <Content Include="Content\darkmin\img\flags\16\EE.png" />
+    <Content Include="Content\darkmin\img\flags\16\EG.png" />
+    <Content Include="Content\darkmin\img\flags\16\EH.png" />
+    <Content Include="Content\darkmin\img\flags\16\ER.png" />
+    <Content Include="Content\darkmin\img\flags\16\ES.png" />
+    <Content Include="Content\darkmin\img\flags\16\ET.png" />
+    <Content Include="Content\darkmin\img\flags\16\EU.png" />
+    <Content Include="Content\darkmin\img\flags\16\FI.png" />
+    <Content Include="Content\darkmin\img\flags\16\FJ.png" />
+    <Content Include="Content\darkmin\img\flags\16\FK.png" />
+    <Content Include="Content\darkmin\img\flags\16\FM.png" />
+    <Content Include="Content\darkmin\img\flags\16\FO.png" />
+    <Content Include="Content\darkmin\img\flags\16\FR.png" />
+    <Content Include="Content\darkmin\img\flags\16\GA.png" />
+    <Content Include="Content\darkmin\img\flags\16\GB.png" />
+    <Content Include="Content\darkmin\img\flags\16\GD.png" />
+    <Content Include="Content\darkmin\img\flags\16\GE.png" />
+    <Content Include="Content\darkmin\img\flags\16\GG.png" />
+    <Content Include="Content\darkmin\img\flags\16\GH.png" />
+    <Content Include="Content\darkmin\img\flags\16\GI.png" />
+    <Content Include="Content\darkmin\img\flags\16\GL.png" />
+    <Content Include="Content\darkmin\img\flags\16\GM.png" />
+    <Content Include="Content\darkmin\img\flags\16\GN.png" />
+    <Content Include="Content\darkmin\img\flags\16\GQ.png" />
+    <Content Include="Content\darkmin\img\flags\16\GR.png" />
+    <Content Include="Content\darkmin\img\flags\16\GS.png" />
+    <Content Include="Content\darkmin\img\flags\16\GT.png" />
+    <Content Include="Content\darkmin\img\flags\16\GU.png" />
+    <Content Include="Content\darkmin\img\flags\16\GW.png" />
+    <Content Include="Content\darkmin\img\flags\16\GY.png" />
+    <Content Include="Content\darkmin\img\flags\16\HK.png" />
+    <Content Include="Content\darkmin\img\flags\16\HN.png" />
+    <Content Include="Content\darkmin\img\flags\16\HR.png" />
+    <Content Include="Content\darkmin\img\flags\16\HT.png" />
+    <Content Include="Content\darkmin\img\flags\16\HU.png" />
+    <Content Include="Content\darkmin\img\flags\16\IC.png" />
+    <Content Include="Content\darkmin\img\flags\16\ID.png" />
+    <Content Include="Content\darkmin\img\flags\16\IE.png" />
+    <Content Include="Content\darkmin\img\flags\16\IL.png" />
+    <Content Include="Content\darkmin\img\flags\16\IM.png" />
+    <Content Include="Content\darkmin\img\flags\16\IN.png" />
+    <Content Include="Content\darkmin\img\flags\16\IQ.png" />
+    <Content Include="Content\darkmin\img\flags\16\IR.png" />
+    <Content Include="Content\darkmin\img\flags\16\IS.png" />
+    <Content Include="Content\darkmin\img\flags\16\IT.png" />
+    <Content Include="Content\darkmin\img\flags\16\JE.png" />
+    <Content Include="Content\darkmin\img\flags\16\JM.png" />
+    <Content Include="Content\darkmin\img\flags\16\JO.png" />
+    <Content Include="Content\darkmin\img\flags\16\JP.png" />
+    <Content Include="Content\darkmin\img\flags\16\KE.png" />
+    <Content Include="Content\darkmin\img\flags\16\KG.png" />
+    <Content Include="Content\darkmin\img\flags\16\KH.png" />
+    <Content Include="Content\darkmin\img\flags\16\KI.png" />
+    <Content Include="Content\darkmin\img\flags\16\KM.png" />
+    <Content Include="Content\darkmin\img\flags\16\KN.png" />
+    <Content Include="Content\darkmin\img\flags\16\KP.png" />
+    <Content Include="Content\darkmin\img\flags\16\KR.png" />
+    <Content Include="Content\darkmin\img\flags\16\KW.png" />
+    <Content Include="Content\darkmin\img\flags\16\KY.png" />
+    <Content Include="Content\darkmin\img\flags\16\KZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\LA.png" />
+    <Content Include="Content\darkmin\img\flags\16\LB.png" />
+    <Content Include="Content\darkmin\img\flags\16\LC.png" />
+    <Content Include="Content\darkmin\img\flags\16\LI.png" />
+    <Content Include="Content\darkmin\img\flags\16\LK.png" />
+    <Content Include="Content\darkmin\img\flags\16\LR.png" />
+    <Content Include="Content\darkmin\img\flags\16\LS.png" />
+    <Content Include="Content\darkmin\img\flags\16\LT.png" />
+    <Content Include="Content\darkmin\img\flags\16\LU.png" />
+    <Content Include="Content\darkmin\img\flags\16\LV.png" />
+    <Content Include="Content\darkmin\img\flags\16\LY.png" />
+    <Content Include="Content\darkmin\img\flags\16\MA.png" />
+    <Content Include="Content\darkmin\img\flags\16\MC.png" />
+    <Content Include="Content\darkmin\img\flags\16\MD.png" />
+    <Content Include="Content\darkmin\img\flags\16\ME.png" />
+    <Content Include="Content\darkmin\img\flags\16\MF.png" />
+    <Content Include="Content\darkmin\img\flags\16\MG.png" />
+    <Content Include="Content\darkmin\img\flags\16\MH.png" />
+    <Content Include="Content\darkmin\img\flags\16\MK.png" />
+    <Content Include="Content\darkmin\img\flags\16\ML.png" />
+    <Content Include="Content\darkmin\img\flags\16\MM.png" />
+    <Content Include="Content\darkmin\img\flags\16\MN.png" />
+    <Content Include="Content\darkmin\img\flags\16\MO.png" />
+    <Content Include="Content\darkmin\img\flags\16\MP.png" />
+    <Content Include="Content\darkmin\img\flags\16\MQ.png" />
+    <Content Include="Content\darkmin\img\flags\16\MR.png" />
+    <Content Include="Content\darkmin\img\flags\16\MS.png" />
+    <Content Include="Content\darkmin\img\flags\16\MT.png" />
+    <Content Include="Content\darkmin\img\flags\16\MU.png" />
+    <Content Include="Content\darkmin\img\flags\16\MV.png" />
+    <Content Include="Content\darkmin\img\flags\16\MW.png" />
+    <Content Include="Content\darkmin\img\flags\16\MX.png" />
+    <Content Include="Content\darkmin\img\flags\16\MY.png" />
+    <Content Include="Content\darkmin\img\flags\16\MZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\NA.png" />
+    <Content Include="Content\darkmin\img\flags\16\NC.png" />
+    <Content Include="Content\darkmin\img\flags\16\NE.png" />
+    <Content Include="Content\darkmin\img\flags\16\NF.png" />
+    <Content Include="Content\darkmin\img\flags\16\NG.png" />
+    <Content Include="Content\darkmin\img\flags\16\NI.png" />
+    <Content Include="Content\darkmin\img\flags\16\NL.png" />
+    <Content Include="Content\darkmin\img\flags\16\NO.png" />
+    <Content Include="Content\darkmin\img\flags\16\NP.png" />
+    <Content Include="Content\darkmin\img\flags\16\NR.png" />
+    <Content Include="Content\darkmin\img\flags\16\NU.png" />
+    <Content Include="Content\darkmin\img\flags\16\NZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\OM.png" />
+    <Content Include="Content\darkmin\img\flags\16\PA.png" />
+    <Content Include="Content\darkmin\img\flags\16\PE.png" />
+    <Content Include="Content\darkmin\img\flags\16\PF.png" />
+    <Content Include="Content\darkmin\img\flags\16\PG.png" />
+    <Content Include="Content\darkmin\img\flags\16\PH.png" />
+    <Content Include="Content\darkmin\img\flags\16\PK.png" />
+    <Content Include="Content\darkmin\img\flags\16\PL.png" />
+    <Content Include="Content\darkmin\img\flags\16\PN.png" />
+    <Content Include="Content\darkmin\img\flags\16\PR.png" />
+    <Content Include="Content\darkmin\img\flags\16\PS.png" />
+    <Content Include="Content\darkmin\img\flags\16\PT.png" />
+    <Content Include="Content\darkmin\img\flags\16\PW.png" />
+    <Content Include="Content\darkmin\img\flags\16\PY.png" />
+    <Content Include="Content\darkmin\img\flags\16\QA.png" />
+    <Content Include="Content\darkmin\img\flags\16\RE.png" />
+    <Content Include="Content\darkmin\img\flags\16\RO.png" />
+    <Content Include="Content\darkmin\img\flags\16\RS.png" />
+    <Content Include="Content\darkmin\img\flags\16\RU.png" />
+    <Content Include="Content\darkmin\img\flags\16\RW.png" />
+    <Content Include="Content\darkmin\img\flags\16\SA.png" />
+    <Content Include="Content\darkmin\img\flags\16\SB.png" />
+    <Content Include="Content\darkmin\img\flags\16\SC.png" />
+    <Content Include="Content\darkmin\img\flags\16\SD.png" />
+    <Content Include="Content\darkmin\img\flags\16\SE.png" />
+    <Content Include="Content\darkmin\img\flags\16\SG.png" />
+    <Content Include="Content\darkmin\img\flags\16\SH.png" />
+    <Content Include="Content\darkmin\img\flags\16\SI.png" />
+    <Content Include="Content\darkmin\img\flags\16\SK.png" />
+    <Content Include="Content\darkmin\img\flags\16\SL.png" />
+    <Content Include="Content\darkmin\img\flags\16\SM.png" />
+    <Content Include="Content\darkmin\img\flags\16\SN.png" />
+    <Content Include="Content\darkmin\img\flags\16\SO.png" />
+    <Content Include="Content\darkmin\img\flags\16\SR.png" />
+    <Content Include="Content\darkmin\img\flags\16\SS.png" />
+    <Content Include="Content\darkmin\img\flags\16\ST.png" />
+    <Content Include="Content\darkmin\img\flags\16\SV.png" />
+    <Content Include="Content\darkmin\img\flags\16\SX.png" />
+    <Content Include="Content\darkmin\img\flags\16\SY.png" />
+    <Content Include="Content\darkmin\img\flags\16\SZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\TC.png" />
+    <Content Include="Content\darkmin\img\flags\16\TD.png" />
+    <Content Include="Content\darkmin\img\flags\16\TF.png" />
+    <Content Include="Content\darkmin\img\flags\16\TG.png" />
+    <Content Include="Content\darkmin\img\flags\16\TH.png" />
+    <Content Include="Content\darkmin\img\flags\16\TJ.png" />
+    <Content Include="Content\darkmin\img\flags\16\TK.png" />
+    <Content Include="Content\darkmin\img\flags\16\TL.png" />
+    <Content Include="Content\darkmin\img\flags\16\TM.png" />
+    <Content Include="Content\darkmin\img\flags\16\TN.png" />
+    <Content Include="Content\darkmin\img\flags\16\TO.png" />
+    <Content Include="Content\darkmin\img\flags\16\TR.png" />
+    <Content Include="Content\darkmin\img\flags\16\TT.png" />
+    <Content Include="Content\darkmin\img\flags\16\TV.png" />
+    <Content Include="Content\darkmin\img\flags\16\TW.png" />
+    <Content Include="Content\darkmin\img\flags\16\TZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\UA.png" />
+    <Content Include="Content\darkmin\img\flags\16\UG.png" />
+    <Content Include="Content\darkmin\img\flags\16\US.png" />
+    <Content Include="Content\darkmin\img\flags\16\UY.png" />
+    <Content Include="Content\darkmin\img\flags\16\UZ.png" />
+    <Content Include="Content\darkmin\img\flags\16\VA.png" />
+    <Content Include="Content\darkmin\img\flags\16\VC.png" />
+    <Content Include="Content\darkmin\img\flags\16\VE.png" />
+    <Content Include="Content\darkmin\img\flags\16\VG.png" />
+    <Content Include="Content\darkmin\img\flags\16\VI.png" />
+    <Content Include="Content\darkmin\img\flags\16\VN.png" />
+    <Content Include="Content\darkmin\img\flags\16\VU.png" />
+    <Content Include="Content\darkmin\img\flags\16\WF.png" />
+    <Content Include="Content\darkmin\img\flags\16\WS.png" />
+    <Content Include="Content\darkmin\img\flags\16\YE.png" />
+    <Content Include="Content\darkmin\img\flags\16\YT.png" />
+    <Content Include="Content\darkmin\img\flags\16\ZA.png" />
+    <Content Include="Content\darkmin\img\flags\16\ZM.png" />
+    <Content Include="Content\darkmin\img\flags\16\ZW.png" />
+    <Content Include="Content\darkmin\img\flags\16\_abkhazia.png" />
+    <Content Include="Content\darkmin\img\flags\16\_basque-country.png" />
+    <Content Include="Content\darkmin\img\flags\16\_british-antarctic-territory.png" />
+    <Content Include="Content\darkmin\img\flags\16\_commonwealth.png" />
+    <Content Include="Content\darkmin\img\flags\16\_england.png" />
+    <Content Include="Content\darkmin\img\flags\16\_gosquared.png" />
+    <Content Include="Content\darkmin\img\flags\16\_kosovo.png" />
+    <Content Include="Content\darkmin\img\flags\16\_mars.png" />
+    <Content Include="Content\darkmin\img\flags\16\_nagorno-karabakh.png" />
+    <Content Include="Content\darkmin\img\flags\16\_nato.png" />
+    <Content Include="Content\darkmin\img\flags\16\_northern-cyprus.png" />
+    <Content Include="Content\darkmin\img\flags\16\_olympics.png" />
+    <Content Include="Content\darkmin\img\flags\16\_red-cross.png" />
+    <Content Include="Content\darkmin\img\flags\16\_scotland.png" />
+    <Content Include="Content\darkmin\img\flags\16\_somaliland.png" />
+    <Content Include="Content\darkmin\img\flags\16\_south-ossetia.png" />
+    <Content Include="Content\darkmin\img\flags\16\_united-nations.png" />
+    <Content Include="Content\darkmin\img\flags\16\_unknown.png" />
+    <Content Include="Content\darkmin\img\flags\16\_wales.png" />
+    <Content Include="Content\darkmin\img\map-close.png" />
+    <Content Include="Content\darkmin\img\map-marker-blue.png" />
+    <Content Include="Content\darkmin\img\map-marker-default.png" />
+    <Content Include="Content\darkmin\img\map-marker-green.png" />
+    <Content Include="Content\darkmin\img\map-marker-pink.png" />
+    <Content Include="Content\darkmin\img\map-marker-red.png" />
+    <Content Include="Content\darkmin\img\map-marker-sea.png" />
+    <Content Include="Content\darkmin\img\map-marker-violet.png" />
+    <Content Include="Content\darkmin\img\map-marker.png" />
+    <Content Include="Content\darkmin\img\mockup1.jpg" />
+    <Content Include="Content\darkmin\img\mockup2.jpg" />
+    <Content Include="Content\darkmin\img\mockup3.jpg" />
+    <Content Include="Content\darkmin\img\mockup4.jpg" />
+    <Content Include="Content\darkmin\img\mockup5.jpg" />
+    <Content Include="Content\darkmin\img\mockup6.jpg" />
+    <Content Include="Content\darkmin\img\mockup7.jpg" />
+    <Content Include="Content\darkmin\img\multiselect-switch.png" />
+    <Content Include="Content\darkmin\img\photos\paul-morris-116514-unsplash.jpg" />
+    <Content Include="Content\darkmin\img\photos\victor-ene-1301123-unsplash.jpg" />
+    <Content Include="Content\darkmin\img\template-mac.png" />
+    <Content Include="Content\darkmin\js\charts-custom.js" />
+    <Content Include="Content\darkmin\js\charts-home.js" />
+    <Content Include="Content\darkmin\js\front.js" />
+    <Content Include="Content\bootstrap-darkmin.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\darkmin\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\darkmin\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\darkmin\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\darkmin\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\darkmin\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="Content\darkmin\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="Content\darkmin\vendor\chart.js\Chart.js" />
+    <Content Include="Content\darkmin\vendor\chart.js\Chart.min.js" />
+    <Content Include="Content\darkmin\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\darkmin\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\darkmin\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\darkmin\vendor\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\additional-methods.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\additional-methods.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\jquery.validate.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ar.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ar.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_az.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_az.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_bg.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_bg.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_bn_BD.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_bn_BD.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ca.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ca.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_cs.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_cs.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_da.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_da.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_de.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_de.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_el.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_el.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_es.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_es.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_es_AR.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_es_AR.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_es_PE.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_es_PE.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_et.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_et.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_eu.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_eu.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_fa.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_fa.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_fi.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_fi.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_fr.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_fr.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ge.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ge.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_gl.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_gl.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_he.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_he.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_hr.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_hr.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_hu.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_hu.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_hy_AM.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_hy_AM.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_id.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_id.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_is.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_is.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_it.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_it.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ja.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ja.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ka.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ka.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_kk.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_kk.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ko.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ko.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_lt.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_lt.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_lv.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_lv.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_mk.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_mk.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_my.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_my.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_nl.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_nl.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_no.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_no.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_pl.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_pl.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_pt_BR.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_pt_BR.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_pt_PT.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_pt_PT.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ro.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ro.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ru.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ru.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sd.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sd.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_si.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_si.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sk.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sk.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sl.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sl.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sr.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sr.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sr_lat.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sr_lat.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sv.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_sv.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_th.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_th.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_tj.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_tj.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_tr.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_tr.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_uk.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_uk.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ur.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_ur.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_vi.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_vi.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_zh.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_zh.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_zh_TW.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\messages_zh_TW.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_de.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_de.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_es_CL.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_es_CL.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_fi.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_fi.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_it.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_it.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_nl.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_nl.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_pt.js" />
+    <Content Include="Content\darkmin\vendor\jquery-validation\localization\methods_pt.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery.cookie\jquery.cookie.js" />
+    <Content Include="Content\darkmin\vendor\jquery.cookie\MIT-LICENSE.txt" />
+    <Content Include="Content\darkmin\vendor\jquery\core.js" />
+    <Content Include="Content\darkmin\vendor\jquery\jquery.js" />
+    <Content Include="Content\darkmin\vendor\jquery\jquery.min.js" />
+    <Content Include="Content\darkmin\vendor\jquery\jquery.slim.js" />
+    <Content Include="Content\darkmin\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\esm\popper-utils.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\esm\popper-utils.min.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\esm\popper.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\esm\popper.min.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\popper-utils.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\popper-utils.min.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\popper.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\popper.min.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\umd\popper-utils.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\umd\popper-utils.min.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\umd\popper.js" />
+    <Content Include="Content\darkmin\vendor\popper.js\umd\popper.min.js" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\tether\tether-theme-arrows-dark.css" />
+    <Content Include="Content\tether\tether-theme-arrows-dark.min.css" />
+    <Content Include="Content\tether\tether-theme-arrows.css" />
+    <Content Include="Content\tether\tether-theme-arrows.min.css" />
+    <Content Include="Content\tether\tether-theme-basic.css" />
+    <Content Include="Content\tether\tether-theme-basic.min.css" />
+    <Content Include="Content\tether\tether.css" />
+    <Content Include="Content\tether\tether.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\darkmin\fonts\dark-dashboard.eot" />
+    <Content Include="Content\darkmin\fonts\dark-dashboard.ttf" />
+    <Content Include="Content\darkmin\fonts\dark-dashboard.woff" />
+    <Content Include="Content\darkmin\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\darkmin\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\darkmin\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\darkmin\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\darkmin\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\darkmin\vendor\jquery.cookie\component.json" />
+    <Content Include="Content\darkmin\vendor\jquery.cookie\cookie.jquery.json" />
+    <Content Include="Content\darkmin\vendor\popper.js\umd\poppper.js.flow" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\admin\css\adminlte.min.css.map" />
+    <Content Include="Content\admin\css\adminlte.css.map" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Content\admin\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\admin\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\admin\plugins\jquery\jquery.min.map" />
+    <Content Include="Content\admin\plugins\jquery\jquery.slim.min.map" />
+    <Content Include="Content\admin\plugins\popper\esm\popper-utils.js.map" />
+    <Content Include="Content\admin\plugins\popper\esm\popper-utils.min.js.map" />
+    <Content Include="Content\admin\plugins\popper\esm\popper.js.map" />
+    <Content Include="Content\admin\plugins\popper\esm\popper.min.js.map" />
+    <Content Include="Content\admin\plugins\popper\popper-utils.js.map" />
+    <Content Include="Content\admin\plugins\popper\popper-utils.min.js.map" />
+    <Content Include="Content\admin\plugins\popper\popper.js.map" />
+    <Content Include="Content\admin\plugins\popper\popper.min.js.map" />
+    <Content Include="Content\admin\plugins\popper\umd\popper-utils.js.map" />
+    <Content Include="Content\admin\plugins\popper\umd\popper-utils.min.js.map" />
+    <Content Include="Content\admin\plugins\popper\umd\popper.js.flow" />
+    <Content Include="Content\admin\plugins\popper\umd\popper.js.map" />
+    <Content Include="Content\admin\plugins\popper\umd\popper.min.js.map" />
+    <Content Include="Content\admin\plugins\popper\umd\poppper.js.flow" />
+    <Content Include="Content\admin\dist\css\adminlte.css.map" />
+    <Content Include="Content\admin\dist\css\adminlte.min.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.components.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.components.min.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.core.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.core.min.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.extra-components.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.extra-components.min.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.pages.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.pages.min.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.plugins.css.map" />
+    <Content Include="Content\admin\dist\css\alt\adminlte.plugins.min.css.map" />
+    <Content Include="Content\admin\dist\js\adminlte.js.map" />
+    <Content Include="Content\admin\dist\js\adminlte.min.js.map" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\tether.js" />
+    <Content Include="Scripts\tether.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\FineNames\Create.cshtml" />
+    <Content Include="Views\FineNames\Delete.cshtml" />
+    <Content Include="Views\FineNames\Details.cshtml" />
+    <Content Include="Views\FineNames\Edit.cshtml" />
+    <Content Include="Views\FineNames\Index.cshtml" />
+    <Content Include="Views\Branches\Create.cshtml" />
+    <Content Include="Views\Branches\Delete.cshtml" />
+    <Content Include="Views\Branches\Details.cshtml" />
+    <Content Include="Views\Branches\Edit.cshtml" />
+    <Content Include="Views\Branches\Index.cshtml" />
+    <Content Include="Views\Roles\Create.cshtml" />
+    <Content Include="Views\Roles\Delete.cshtml" />
+    <Content Include="Views\Roles\Details.cshtml" />
+    <Content Include="Views\Roles\Edit.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\User\Delete.cshtml" />
+    <Content Include="Views\User\Details.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\CustomerAccounts\Create.cshtml" />
+    <Content Include="Views\CustomerAccounts\Delete.cshtml" />
+    <Content Include="Views\CustomerAccounts\Details.cshtml" />
+    <Content Include="Views\CustomerAccounts\Edit.cshtml" />
+    <Content Include="Views\CustomerAccounts\Index.cshtml" />
+    <Content Include="Views\GlCategories\Create.cshtml" />
+    <Content Include="Views\GlCategories\Delete.cshtml" />
+    <Content Include="Views\GlCategories\Details.cshtml" />
+    <Content Include="Views\GlCategories\Edit.cshtml" />
+    <Content Include="Views\GlCategories\Index.cshtml" />
+    <Content Include="Views\GlAccounts\Create.cshtml" />
+    <Content Include="Views\GlAccounts\Delete.cshtml" />
+    <Content Include="Views\GlAccounts\Details.cshtml" />
+    <Content Include="Views\GlAccounts\Edit.cshtml" />
+    <Content Include="Views\GlAccounts\Index.cshtml" />
+    <Content Include="Views\Tellers\Create.cshtml" />
+    <Content Include="Views\Tellers\Delete.cshtml" />
+    <Content Include="Views\Tellers\Details.cshtml" />
+    <Content Include="Views\Tellers\Edit.cshtml" />
+    <Content Include="Views\Tellers\Index.cshtml" />
+    <Content Include="Views\AccountTypeManagements\Create.cshtml" />
+    <Content Include="Views\AccountTypeManagements\Delete.cshtml" />
+    <Content Include="Views\AccountTypeManagements\Details.cshtml" />
+    <Content Include="Views\AccountTypeManagements\Edit.cshtml" />
+    <Content Include="Views\AccountTypeManagements\Index.cshtml" />
+    <Content Include="Views\AccountTypeManagements\EditSavings.cshtml" />
+    <Content Include="Views\AccountTypeManagements\EditCurrent.cshtml" />
+    <Content Include="Views\AccountTypeManagements\EditLoan.cshtml" />
+    <Content Include="Views\CustomerAccounts\SelectCustomer.cshtml" />
+    <Content Include="Views\CustomerAccounts\CreateSavings.cshtml" />
+    <Content Include="Views\CustomerAccounts\CreateCurrent.cshtml" />
+    <Content Include="Views\Consumers\Create.cshtml" />
+    <Content Include="Views\Consumers\Delete.cshtml" />
+    <Content Include="Views\Consumers\Details.cshtml" />
+    <Content Include="Views\Consumers\Edit.cshtml" />
+    <Content Include="Views\Consumers\Index.cshtml" />
+    <Content Include="Views\ConsumerAccounts\Create.cshtml" />
+    <Content Include="Views\ConsumerAccounts\Delete.cshtml" />
+    <Content Include="Views\ConsumerAccounts\Details.cshtml" />
+    <Content Include="Views\ConsumerAccounts\Edit.cshtml" />
+    <Content Include="Views\ConsumerAccounts\Index.cshtml" />
+    <Content Include="Views\ConsumerAccounts\CreateLoan.cshtml" />
+    <Content Include="Views\TellerPostings\Create.cshtml" />
+    <Content Include="Views\TellerPostings\Delete.cshtml" />
+    <Content Include="Views\TellerPostings\Details.cshtml" />
+    <Content Include="Views\TellerPostings\Edit.cshtml" />
+    <Content Include="Views\TellerPostings\Index.cshtml" />
+    <Content Include="Views\TellerPostings\SelectAccount.cshtml" />
+    <Content Include="Views\TellerPostings\TellerPostSuccess.cshtml" />
+    <Content Include="Views\TellerPostings\TellerPostFail.cshtml" />
+    <Content Include="Views\TellerPostings\UserPosts.cshtml" />
+    <Content Include="Views\GlPostings\Create.cshtml" />
+    <Content Include="Views\GlPostings\Delete.cshtml" />
+    <Content Include="Views\GlPostings\Details.cshtml" />
+    <Content Include="Views\GlPostings\Edit.cshtml" />
+    <Content Include="Views\GlPostings\Index.cshtml" />
+    <Content Include="Views\GlPostings\UserPosts.cshtml" />
+    <Content Include="Views\GlPostings\SelectFirstAccount.cshtml" />
+    <Content Include="Views\GlPostings\SelectSecondAccount.cshtml" />
+    <Content Include="Views\GlPostings\GlPostSuccess.cshtml" />
+    <Content Include="Views\GlPostings\GlPostFail.cshtml" />
+    <Content Include="Views\FinancialReport\TrialBalance.cshtml" />
+    <Content Include="Views\FinancialReport\BalanceSheet.cshtml" />
+    <Content Include="Views\Shared\darkmin_Layout.cshtml" />
+    <Content Include="Views\FinancialReport\ProfitAndLoss.cshtml" />
+    <Content Include="Views\Eod\Index.cshtml" />
+    <Content Include="Views\Eod\successeod.cshtml" />
+    <Content Include="Views\Staff\Create.cshtml" />
+    <Content Include="Views\Staff\Delete.cshtml" />
+    <Content Include="Views\Staff\Details.cshtml" />
+    <Content Include="Views\Staff\Edit.cshtml" />
+    <Content Include="Views\Staff\Index.cshtml" />
+    <Content Include="Views\User\MyAccount.cshtml" />
+    <Content Include="Views\Usser\Index.cshtml" />
+    <Content Include="Views\Usser\Edit.cshtml" />
+    <Content Include="Views\GlCategories\CategoryDeleteError.cshtml" />
+    <Content Include="Views\GlAccounts\GlAccountDeleteError.cshtml" />
+    <Content Include="Views\AccountTypeManagements\Info.cshtml" />
+    <Content Include="Views\Roles\RoleError.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\darkmin\vendor\font-awesome\less\" />
+    <Folder Include="Content\darkmin\vendor\font-awesome\scss\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002231059336_InitialModel.resx">
+      <DependentUpon>202002231059336_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002231159311_AddCustomerAndMembers.resx">
+      <DependentUpon>202002231159311_AddCustomerAndMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002231211052_AddBranch.resx">
+      <DependentUpon>202002231211052_AddBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002231245214_AddRoleAndClaims.resx">
+      <DependentUpon>202002231245214_AddRoleAndClaims.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002231322242_AddProfileDataToAppUser.resx">
+      <DependentUpon>202002231322242_AddProfileDataToAppUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002232009143_CustomerModel.resx">
+      <DependentUpon>202002232009143_CustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002241016153_CustIdNameChange.resx">
+      <DependentUpon>202002241016153_CustIdNameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002250649218_AddCustomerAccount.resx">
+      <DependentUpon>202002250649218_AddCustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002250727016_AddCustomerAccount1.resx">
+      <DependentUpon>202002250727016_AddCustomerAccount1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002250917400_EditCustomerAccount.resx">
+      <DependentUpon>202002250917400_EditCustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251322059_ChangeEmailApplicationUser.resx">
+      <DependentUpon>202002251322059_ChangeEmailApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002261025340_AddGlCategories.resx">
+      <DependentUpon>202002261025340_AddGlCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002270827124_AddCodeToGlCategory.resx">
+      <DependentUpon>202002270827124_AddCodeToGlCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002270957212_AddGlAccounts.resx">
+      <DependentUpon>202002270957212_AddGlAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002271742332_TellersTill.resx">
+      <DependentUpon>202002271742332_TellersTill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002271747254_TellersTill1.resx">
+      <DependentUpon>202002271747254_TellersTill1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002271750440_TellersTil.resx">
+      <DependentUpon>202002271750440_TellersTil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002271758239_AddTellerTill.resx">
+      <DependentUpon>202002271758239_AddTellerTill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002272045298_AddTillAccount.resx">
+      <DependentUpon>202002272045298_AddTillAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002291237220_AddAccountTypeManagement.resx">
+      <DependentUpon>202002291237220_AddAccountTypeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002291319154_UpdateAccountTypeManagement.resx">
+      <DependentUpon>202002291319154_UpdateAccountTypeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010243126_updateLoansToCustomerDB.resx">
+      <DependentUpon>202003010243126_updateLoansToCustomerDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010330242_removeDateFromCustomerAccount.resx">
+      <DependentUpon>202003010330242_removeDateFromCustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010346188_databaseErrorChange.resx">
+      <DependentUpon>202003010346188_databaseErrorChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010355509_CustomerIdChange.resx">
+      <DependentUpon>202003010355509_CustomerIdChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010408456_CustomerIdChangeAgain.resx">
+      <DependentUpon>202003010408456_CustomerIdChangeAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003010751373_PutConsumerWhereCustomer.resx">
+      <DependentUpon>202003010751373_PutConsumerWhereCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003011711319_addValuesToConsumer.resx">
+      <DependentUpon>202003011711319_addValuesToConsumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003011726571_addNumberOfYearsToLoan.resx">
+      <DependentUpon>202003011726571_addNumberOfYearsToLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003011858159_addNullableToConsumerAccount.resx">
+      <DependentUpon>202003011858159_addNullableToConsumerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003011926472_changesToConsumerAccount.resx">
+      <DependentUpon>202003011926472_changesToConsumerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003012007416_newChangesToConsumerAccount.resx">
+      <DependentUpon>202003012007416_newChangesToConsumerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003020015407_AddTellerPosting.resx">
+      <DependentUpon>202003020015407_AddTellerPosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003020959402_AddGlPosting.resx">
+      <DependentUpon>202003020959402_AddGlPosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003021517557_AddTransaction.resx">
+      <DependentUpon>202003021517557_AddTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003022056458_AddIncomeExpense.resx">
+      <DependentUpon>202003022056458_AddIncomeExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003030126364_AddInfoToConsumer.resx">
+      <DependentUpon>202003030126364_AddInfoToConsumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031604243_ChangeofNullableConsumerAccount.resx">
+      <DependentUpon>202003031604243_ChangeofNullableConsumerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003040454526_checkforchanges.resx">
+      <DependentUpon>202003040454526_checkforchanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003041324379_ReMigrateThings.resx">
+      <DependentUpon>202003041324379_ReMigrateThings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003041432102_AddClientAccount.resx">
+      <DependentUpon>202003041432102_AddClientAccount.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65102</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65102/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

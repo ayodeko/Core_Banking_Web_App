@@ -1,0 +1,298 @@
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\GCBA.dll.config
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\GCBA.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\GCBA.pdb
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\csc.exe
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\csc.exe.config
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\csc.rsp
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\csi.exe
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\csi.exe.config
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\csi.rsp
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.AppContext.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Console.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.IO.Compression.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.IO.Pipes.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.Claims.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.ValueTuple.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\vbc.exe
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\vbc.exe.config
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\vbc.rsp
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\VBCSCompiler.exe
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Antlr3.Runtime.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\EntityFramework.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\EntityFramework.SqlServer.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Newtonsoft.Json.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Owin.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Helpers.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Mvc.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Optimization.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Razor.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.WebPages.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.WebPages.Razor.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\WebGrease.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Helpers.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Mvc.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Optimization.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.Razor.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.WebPages.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\System.Web.WebPages.Razor.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Newtonsoft.Json.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Antlr3.Runtime.pdb
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\EntityFramework.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\EntityFramework.SqlServer.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.csprojAssemblyReference.cache
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.csproj.CoreCompileInputs.cache
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.csproj.CopyComplete
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.pdb
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\SendGrid.SmtpApi.dll
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\bin\SendGrid.SmtpApi.xml
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.csproj.GenerateResource.cache
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.InitialModel.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCustomerAndMembers.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddBranch.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddRoleAndClaims.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddProfileDataToAppUser.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustomerModel.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustIdNameChange.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCustomerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCustomerAccount1.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.EditCustomerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.ChangeEmailApplicationUser.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddGlCategories.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCodeToGlCategory.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddGlAccounts.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.TellersTill.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.TellersTill1.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.TellersTil.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTellerTill.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTillAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddAccountTypeManagement.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.UpdateAccountTypeManagement.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.updateLoansToCustomerDB.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.removeDateFromCustomerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.databaseErrorChange.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustomerIdChange.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustomerIdChangeAgain.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.PutConsumerWhereCustomer.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.addValuesToConsumer.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.addNumberOfYearsToLoan.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.addNullableToConsumerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.changesToConsumerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.newChangesToConsumerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTellerPosting.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddGlPosting.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTransaction.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddIncomeExpense.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddInfoToConsumer.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.ChangeofNullableConsumerAccount.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.checkforchanges.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.ReMigrateThings.resources
+C:\Users\DEKO\Desktop\CBA\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddClientAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\GCBA.dll.config
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\GCBA.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\GCBA.pdb
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\csc.exe
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\csc.exe.config
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\csc.rsp
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\csi.exe
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\csi.exe.config
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\csi.rsp
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.AppContext.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Console.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.IO.Compression.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.IO.Pipes.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.Claims.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.ValueTuple.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\vbc.exe
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\vbc.exe.config
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\vbc.rsp
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\VBCSCompiler.exe
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Antlr3.Runtime.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\EntityFramework.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\EntityFramework.SqlServer.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Newtonsoft.Json.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Owin.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\SendGrid.SmtpApi.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Helpers.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Mvc.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Optimization.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Razor.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.WebPages.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.WebPages.Razor.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\WebGrease.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\SendGrid.SmtpApi.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Helpers.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Mvc.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Optimization.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.Razor.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.WebPages.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\System.Web.WebPages.Razor.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Newtonsoft.Json.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Antlr3.Runtime.pdb
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\EntityFramework.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\EntityFramework.SqlServer.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.csproj.AssemblyReference.cache
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.InitialModel.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCustomerAndMembers.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddBranch.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddRoleAndClaims.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddProfileDataToAppUser.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustomerModel.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustIdNameChange.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCustomerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCustomerAccount1.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.EditCustomerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.ChangeEmailApplicationUser.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddGlCategories.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddCodeToGlCategory.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddGlAccounts.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.TellersTill.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.TellersTill1.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.TellersTil.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTellerTill.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTillAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddAccountTypeManagement.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.UpdateAccountTypeManagement.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.updateLoansToCustomerDB.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.removeDateFromCustomerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.databaseErrorChange.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustomerIdChange.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.CustomerIdChangeAgain.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.PutConsumerWhereCustomer.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.addValuesToConsumer.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.addNumberOfYearsToLoan.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.addNullableToConsumerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.changesToConsumerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.newChangesToConsumerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTellerPosting.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddGlPosting.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddTransaction.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddIncomeExpense.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddInfoToConsumer.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.ChangeofNullableConsumerAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.checkforchanges.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.ReMigrateThings.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.Migrations.AddClientAccount.resources
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.csproj.GenerateResource.cache
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.csproj.CoreCompileInputs.cache
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.csproj.CopyComplete
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.dll
+C:\Users\aakindeko\source\repos\Core Banking App\GCBA\GCBA\obj\Debug\GCBA.pdb
