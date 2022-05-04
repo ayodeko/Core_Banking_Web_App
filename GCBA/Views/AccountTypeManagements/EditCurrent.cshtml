@@ -1,0 +1,93 @@
+﻿@model GCBA.Models.AccountTypeManagement
+
+@{
+    ViewBag.Title = "EditCurrent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EditCurrent</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>AccountTypeManagement</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CurrentCreditInterestRate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CurrentCreditInterestRate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CurrentCreditInterestRate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CurrentMinimumBalance, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CurrentMinimumBalance, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CurrentMinimumBalance, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.COT, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.COT, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.COT, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CurrentInterestExpenseGlID, "CurrentInterestExpenseGlID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("CurrentInterestExpenseGlID", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.CurrentInterestExpenseGlID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.COTIncomeGlID, "COTIncomeGlID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("COTIncomeGlID", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.COTIncomeGlID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ID)
+    @Html.HiddenFor(model => model.IsOpened)
+    @Html.HiddenFor(model => model.FinancialDate)
+
+    @Html.HiddenFor(model => model.SavingsCreditInterestRate)
+    @Html.HiddenFor(model => model.SavingsMinimumBalance)
+    @Html.HiddenFor(model => model.SavingsInterestExpenseGlID)
+    @Html.HiddenFor(model => model.SavingsInterestPayableGlID)
+
+    @Html.HiddenFor(model => model.LoanDebitInterestRate)
+    @Html.HiddenFor(model => model.LoanInterestIncomeGlID)
+    @Html.HiddenFor(model => model.LoanInterestReceivableGlID)
+    
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

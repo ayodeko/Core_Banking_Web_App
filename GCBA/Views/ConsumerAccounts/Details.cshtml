@@ -1,0 +1,131 @@
+﻿@model GCBA.Models.ConsumerAccount
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConsumerAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Branch.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Branch.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Consumer.ConsumerLongID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Consumer.ConsumerLongID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkedAccount.AccountName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkedAccount.AccountName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountBalance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanMonthlyInterestRepay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoanMonthlyInterestRepay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanMonthlyRepay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoanMonthlyRepay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanMonthlyPrincipalRepay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoanMonthlyPrincipalRepay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanPrincipalRemaining)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoanPrincipalRemaining)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TermsOfLoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TermsOfLoan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoanAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoanAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

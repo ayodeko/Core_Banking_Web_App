@@ -1,0 +1,75 @@
+﻿@model IEnumerable<GCBA.Models.GlPosting>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GL Posts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "SelectFirstAccount")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CrGlAccount.AccountName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DrGlAccount.AccountName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreditAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DebitAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Narration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostInitiatorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CrGlAccount.AccountName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DrGlAccount.AccountName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreditAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DebitAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Narration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostInitiatorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

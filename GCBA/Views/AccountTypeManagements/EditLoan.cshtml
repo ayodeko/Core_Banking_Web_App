@@ -1,0 +1,76 @@
+﻿@model GCBA.Models.AccountTypeManagement
+
+@{
+    ViewBag.Title = "EditLoan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EditLoan</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>AccountTypeManagement</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID)
+
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LoanDebitInterestRate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LoanDebitInterestRate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LoanDebitInterestRate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LoanInterestIncomeGlID, "LoanInterestIncomeGlID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("LoanInterestIncomeGlID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.LoanInterestIncomeGlID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LoanInterestReceivableGlID, "LoanInterestReceivableGlID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("LoanInterestReceivableGlID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.LoanInterestReceivableGlID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        @Html.HiddenFor(model => model.ID)
+        @Html.HiddenFor(model => model.IsOpened)
+        @Html.HiddenFor(model => model.FinancialDate)
+
+        @Html.HiddenFor(model => model.COT)
+        @Html.HiddenFor(model => model.COTIncomeGlID)
+        @Html.HiddenFor(model => model.CurrentInterestExpenseGlID)
+        @Html.HiddenFor(model => model.CurrentCreditInterestRate)
+        @Html.HiddenFor(model => model.CurrentMinimumBalance)
+
+        @Html.HiddenFor(model => model.LoanDebitInterestRate)
+        @Html.HiddenFor(model => model.LoanInterestIncomeGlID)
+        @Html.HiddenFor(model => model.LoanInterestReceivableGlID)
+        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

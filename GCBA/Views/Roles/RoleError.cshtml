@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "RoleError";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>This Role cannot be deleted or edited because it is a stock role (Admin or Teller)</h2>
+
+@Html.ActionLink("Back to List of Roles", "Index")
+

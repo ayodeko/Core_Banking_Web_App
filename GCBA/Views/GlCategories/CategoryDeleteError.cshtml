@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "CategoryDeleteError";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>This Category Cannot be deleted because it has GL Accounts Attached to it!</h2>
+
+@Html.ActionLink("Back To List", "Index", "GlCategories")
+

@@ -1,0 +1,52 @@
+﻿@using GCBA.Logic
+@using GCBA.Repositories
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div id="page-wrapper">
+        @using (Html.BeginForm())
+        {
+            if (ViewBag.Msg != null)
+            {
+                <div class="alert alert-primary" role="alert">
+                    @ViewBag.Msg
+                </div>
+                @*<div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+                <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                </div>*@
+
+            }
+            <p id="toastAlert" hidden="hidden">@ViewBag.Msg</p>
+
+            EodLogic logic = new EodLogic();
+            var config = new AccountTypeManagementRepository().GetFirst();
+            <p class="text-primary">Financial Date: @config.FinancialDate.ToString("D")</p>
+            if (config.IsOpened == false)
+            {
+                <h3 class="text-danger">Yet to be opened</h3>
+                @Html.ActionLink("Open Business", "OpenOrCloseBusiness");
+            }
+            else
+            {
+                <h3 class="text-success">Business Opened!</h3>
+                @Html.ActionLink("Close Business", "OpenOrCloseBusiness");
+            }
+
+
+        }
+    </div>
